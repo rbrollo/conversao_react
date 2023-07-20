@@ -1,16 +1,11 @@
-function Input(props) {
+function Select(props) {
   return (
-    <input
-      onChange={props.onChange}
-      onBlur={props.onBlur}
-      type={props.type}
+    <select
       id={props.id}
-      placeholder={props.placeholder}
       value={props.value}
-      min={props.min}
-      step={props.step}
+      onChange={props.onChange}
       className="text-center text-sm border rounded-md border-slate-300 shadow-sm placeholder-slate-400 focus:outline-none focus:border-sky-600 focus:shadow-md"
     />
   );
 }
-export default Input;
+export default Select;
